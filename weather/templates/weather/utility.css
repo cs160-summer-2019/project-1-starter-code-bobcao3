@@ -1,0 +1,240 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.animate {
+    transition: transform 0.5s ease-out;
+}
+
+.content {
+    padding: 16px;
+    padding-left: env(safe-area-inset-left); /* Apply safe area */
+    padding-right: env(safe-area-inset-right);
+}
+
+.full-width-top {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.full-width-bottom {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.page {
+    flex-grow: 100;
+    left: 0px;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    visibility: hidden;
+    z-index: 200;
+}
+
+.page.verticle {
+    flex-direction: column;
+}
+
+.page.reverse {
+    justify-content: flex-end;
+}
+
+.uilayer {
+    visibility: visible;
+}
+
+.search-bar {
+    border-radius: 1.5em 1.5em;
+    border-width: 2px;
+    padding: 1em 1.5em;
+    height: 1em;
+    display: inline-block;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    border-color: #fff;
+    border-style: solid;
+    outline: none;
+    background-color: rgba(255.0,255.0,255.0,0.6);
+    backdrop-filter: blur(1.5em);
+}
+
+.search-bar:focus {
+    border-color: #eee;
+    border-style: solid;
+}
+
+.card {
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    background-color: rgba(255.0,255.0,255.0,0.6);
+    padding: 1.5em;
+    backdrop-filter: blur(1.5em);
+}
+
+.card.round-top {
+    border-radius: 1.5em 1.5em 0.0em 0.0em;
+}
+
+.card.round-bottom {
+    border-radius: 0.0em 0.0em 1.5em 1.5em;
+}
+
+.card.round {
+    border-radius: 1.5em;
+}
+
+.icon-button {
+    border-radius: 1.0em 1.0em;
+    border-width: 2;
+    padding: 0.0em;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    border-color: #fff;
+    background-color: #fff;
+    border-style: solid;
+    outline: none;
+    color: #777;
+    line-height: 1.0;
+    justify-content: center;
+    font-size: 2em;
+    flex-grow: 0;
+}
+
+.icon-button:active {
+    border-color: #eee;
+    color: #666;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: 0.3s;
+}
+
+.icon-button:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+    transition: 0.3s;
+}
+
+h1.title {
+    font-size: 3em;
+}
+
+h1.subtitle {
+    font-size: 1.5em;
+    color: #434343;
+}
+
+h2.title {
+    font-size: 2.5em;
+}
+
+h2.subtitle {
+    font-size: 1.3em;
+    color: #434343;
+}
+
+h1, h2, h3, h4, h5, h6, input, span, p, a, b {
+    margin: 0;
+    font-family: 'Scope One', 'Noto Sans SC', serif, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+    font-weight: 400;
+    color: #333;
+    text-transform: none;
+    line-height: 1.0;
+}
+
+.width-expand {
+    flex-grow: 100;
+}
+
+.no-expand {
+    flex: none;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.container.inline {
+    display: inline-flex;
+}
+
+.container.verticle {
+    flex-direction: column;
+}
+
+.container.child-center {
+    align-items: center;
+}
+
+.container.child-expand {
+    align-items: stretch;
+}
+
+.container.wrap {
+    flex-wrap: wrap;
+}
+
+icon.weather-icon {
+    font-family: weatherIcons;
+}
+
+/* The Modal (background) */
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Stay in place */
+    z-index: 9999;
+    top: 100%; /* Hidden by default */
+    left: 0;
+    height: 100%; /* Full height */
+    width: 100%;
+    overflow: disabled; /* Enable scroll if needed */
+
+    transition: all 0.5s ease-in-out;
+}
+
+.margin-all-large { margin: 2.0em; }
+
+.margin-all { margin: 1.0em; }
+.margin-none { margin: 0; }
+.margin-side { margin: 0.0em 1.0em; }
+.margin-vert { margin: 1.0em 0.0em; }
+.margin-right { margin-right: 1.0em; }
+.margin-top { margin-top: 1.0em; }
+.margin-left { margin-left: 1.0em; }
+.margin-bottom { margin-bottom: 1.0em; }
+
+.padding-all-large { padding: 2.0em; }
+
+.padding-all { padding: 1.0em; }
+.padding-none { padding: 0; }
+.padding-side { padding: 0.0em 1.0em; }
+.padding-right { padding-right: 1.0em; }
+.padding-top { padding-top: 1.0em; }
+.padding-left { padding-left: 1.0em; }
+.padding-bottom { padding-bottom: 1.0em; }
+
+.text-fit {
+    overflow-wrap: normal;
+}
+
+.align-center {
+    align-content: center;
+    align-items: center;
+}

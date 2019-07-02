@@ -1,0 +1,83 @@
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#city-card {
+    padding-bottom: 2.5em;
+    position: relative;
+    bottom: -3em;
+}
+
+.right-toggles {
+    position: absolute;
+    left: auto;
+    top: 4.5em;
+    right: 0px;
+}
+
+#temp-hourly-forecast {
+    width: 150px;
+    margin: 0.0 -1.5em 0.0 -1.5em;
+}
+
+#city-details-card {
+    overflow: auto;
+}
+
+#search-bar {
+    position: sticky;
+}
+
+#city-list-page {
+    top: 100%;
+    position: absolute;
+}
+
+#calendar-page {
+    left: 100%;
+    position: absolute;
+    background: rgba(220,220,220,0.6);
+    backdrop-filter: blur(1.5em);
+}
+
+#travel-plan .entry {
+    border-left: 0.2em;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #e8c;
+    padding: 0.0em 0.2em;
+    margin: 0.5em 0.0em;
+    line-height: 1.5;
+    height: 1.5em;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#travel-plan .date {
+    box-sizing: border-box;
+    text-align: right;
+    vertical-align: middle;
+    padding: 0.0em 0.5em;
+    margin: 0.5em 0.0em;
+    line-height: 1.5;
+    height: 1.5em;
+}
+
+.calendar b {
+    text-align: center;
+    letter-spacing: normal;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.calendar p {
+    text-align: center;
+    letter-spacing: normal;
+    line-height: 2.0;
+}
